@@ -49,13 +49,18 @@ nav ul{
   display: flex;
 }
 
-a{
+li + li:before{
+    content: "|";
+    margin: 0 1vw;
+}
+
+header a{
   text-decoration: none;
   color: grey;
   font-size: 1.2em;
 }
 
-a:hover{
+header a:hover{
     color: rgb(21, 114, 75);
     font-weight: bold;
 }

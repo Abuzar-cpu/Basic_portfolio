@@ -1,3 +1,4 @@
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +50,11 @@ nav ul{
   display: flex;
 }
 
+li + li:before{
+    content: "|";
+    margin: 0 1vw;
+}
+
 a{
   text-decoration: none;
   color: grey;
@@ -82,32 +88,12 @@ a:hover{
     font-size: 1.3em;
 }
 
-#textContact{
+#galleryText{
     color: rgb(21, 114, 75);
     font-size: 1.5em;
 }
 
-label{
-    display: block;
-    margin-top: 1.5vh;
-}
 
-input{
-    width: 100%;
-}
-
-textarea{
-    width: 100%;
-}
-
-button{
-    background-color: rgb(21, 114, 75);
-    color: #fff;
-    border: none;
-    margin-top: 1.5vh;
-    border-radius: 10px;
-    padding: 2vw 2vh;
-}
 /*
     Main-2
 */
@@ -161,6 +147,11 @@ footer{
 
 
 @media screen and (min-width: 640px) {
+
+    body{
+        min-width: 378px;
+    }
+
     #body{
         height: 100vh;   
     }
