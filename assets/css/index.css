@@ -71,7 +71,7 @@ header a:hover{
 #body{
     display: flex;
     padding: 10px 50px 0 50px;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: space-between;
     /* border: 1px solid blue; */
     border-bottom: 10px solid rgb(21, 114, 75);
@@ -140,25 +140,7 @@ footer{
     color: #FFF;
 }
 
-/*
-    Media queries
-*/
-
-/* @media screen and (max-width: 415px) {
-    #body{
-        height: 150vhı   
-    }
-
-    .social-container{
-        width: 10vh;
-    }
-} */
-
 @media screen and (min-width: 640px) {
-    #body{
-        height: 100vh;   
-    }
-
     .social-container{
         width: 10vh;
     }
@@ -168,14 +150,15 @@ footer{
 
     #body{
         padding: 5vw 5vw;
+        /* height: calc(100vh + 2vw); */
+        height: 100vh;
     }
 
     #main-1{
         width: 60%;
         font-size: 1em;
-        height: 50vh;
+        /* height: calc(50vh + 10vw); */
     }
-
 
     #main-2{
         width: 30%;
@@ -196,5 +179,16 @@ footer{
     
     header{
         padding: 2vh 5vw;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    #body{
+        padding: 5vw 5vw;
+        height: 100vh;
+    }
+
+    #main-1{
+        height: calc(50vh + 3vw);
     }
 }

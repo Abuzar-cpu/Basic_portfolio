@@ -73,7 +73,7 @@ a:hover{
 #body{
     display: flex;
     padding: 10px 50px 0 50px;
-    height: 100vh;
+    height: 100vh + 10vw;
     justify-content: space-between;
     /* border: 1px solid blue; */
     border-bottom: 10px solid rgb(21, 114, 75);
@@ -82,7 +82,7 @@ a:hover{
 #main-1{
     /* border: 1px solid brown; */
     background-color: #FFF;
-    /* height: 50vh; */
+    /* height: calc(100vh + 10vw); */
     width: 100%;
     padding: 2vh 5vw;
     font-size: 1.3em;
@@ -91,6 +91,30 @@ a:hover{
 #galleryText{
     color: rgb(21, 114, 75);
     font-size: 1.5em;
+}
+
+.project{
+    position: relative;
+}
+
+.projectImage{
+    width: 100%;
+}
+
+.projectImage img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.projectName{
+    background-color: rgb(21, 114, 75);
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    position: absolute;
+    bottom: 10px;
 }
 
 
@@ -153,7 +177,7 @@ footer{
     }
 
     #body{
-        height: 100vh;   
+        /* height: 100vh + 10vw;    */
     }
 
     .social-container{
@@ -165,6 +189,8 @@ footer{
 
     #body{
         padding: 5vw 5vw;
+        /* height: calc(100vh + 10vw); */
+        height: 100vh;
     }
 
     #main-1{
@@ -193,5 +219,17 @@ footer{
     
     header{
         padding: 2vh 5vw;
+    }
+    
+    .projects{
+        display: flex;
+        justify-content: space-between;
+    }
+    .projectImage{
+        width: 20vw;;
+    }
+
+    .projectName{
+
     }
 }
