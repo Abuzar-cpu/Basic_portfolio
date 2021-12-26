@@ -73,7 +73,8 @@ a:hover{
 #body{
     display: flex;
     padding: 10px 50px 0 50px;
-    height: 100vh + 10vw;
+    /* height: 100vh + 10vw; */
+    height: fit-content;
     justify-content: space-between;
     /* border: 1px solid blue; */
     border-bottom: 10px solid rgb(21, 114, 75);
@@ -189,7 +190,8 @@ footer{
 
     #body{
         padding: 5vw 5vw;
-        height: calc(100vh + 10vw);
+        height: fit-content;
+        /* height: calc(100vh + 10vw); */
         /* height: 100vh; */
     }
 
