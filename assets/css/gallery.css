@@ -189,8 +189,8 @@ footer{
 
     #body{
         padding: 5vw 5vw;
-        /* height: calc(100vh + 10vw); */
-        height: 100vh;
+        height: calc(100vh + 10vw);
+        /* height: 100vh; */
     }
 
     #main-1{
