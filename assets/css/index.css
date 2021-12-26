@@ -157,6 +157,7 @@ footer{
     #main-1{
         width: 60%;
         font-size: 1em;
+        height: fit-content;
         /* height: calc(50vh + 10vw); */
     }
 
